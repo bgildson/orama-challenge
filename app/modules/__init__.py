@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from . import freelancers
+
 
 def init_app(app):
-    pass
+    freelancers.init_app(app)

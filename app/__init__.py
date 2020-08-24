@@ -29,8 +29,7 @@ def create_app(flask_env=None, *args, **kwargs) -> Flask:
         if env_flask_env:
             flask_env = env_flask_env
         else:
-            msg = 'could not identify which environment the ' \
-                  'application should use'
+            msg = 'could not identify which environment the application should use'
             app.logger.error(msg)
             sys.exit(1)
 
@@ -39,6 +38,7 @@ def create_app(flask_env=None, *args, **kwargs) -> Flask:
 
     # initialize modules
     from app import modules
+
     modules.init_app(app)
 
     return app

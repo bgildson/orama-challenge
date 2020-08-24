@@ -6,7 +6,7 @@
       "type": "python",
       "request": "launch",
       "module": "flask",
-      "console": "integratedTerminal",
+      "console": "internalConsole",
       "env": {
         "FLASK_APP": "app",
         "FLASK_ENV": "development",

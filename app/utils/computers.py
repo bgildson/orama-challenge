@@ -30,7 +30,7 @@ def compute_freelance_skills(payload: Dict[str, Any]) -> Dict[str, Any]:
             current: datetime = professional_experience['start_date']
             last: datetime = professional_experience['end_date']
             last = last.replace(day=1)
-            while current <= last:
+            while current < last:
                 year_month = current.strftime('%Y%m')
                 skills[skill['id']]['months'][year_month] = None
                 current += relativedelta(months=1)

@@ -36,7 +36,7 @@ def freelance_one_experience_computed():
         'freelance': {
             'id': 42,
             'computed_skills': [
-                {'id': 370, 'name': 'Javascript', 'duration_in_months': 29}
+                {'id': 370, 'name': 'Javascript', 'duration_in_months': 28}
             ],
         }
     }
@@ -66,7 +66,7 @@ def freelance_two_experiences_with_same_skill_in_continuous_time():
                 {
                     'id': 80,
                     'company_name': 'Harber, Kirlin and Thompson',
-                    'start_date': datetime(2016, 10, 1),
+                    'start_date': datetime(2016, 9, 1),
                     'end_date': datetime(2018, 6, 1),
                     'skills': [{'id': 370, 'name': 'Javascript'},],
                 },
@@ -81,7 +81,7 @@ def freelance_two_experiences_with_same_skill_in_continuous_time_computed():
         'freelance': {
             'id': 42,
             'computed_skills': [
-                {'id': 370, 'name': 'Javascript', 'duration_in_months': 54}
+                {'id': 370, 'name': 'Javascript', 'duration_in_months': 53}
             ],
         }
     }
@@ -126,7 +126,7 @@ def freelance_two_experiences_with_same_skill_with_interval_between_computed():
         'freelance': {
             'id': 42,
             'computed_skills': [
-                {'id': 370, 'name': 'Javascript', 'duration_in_months': 46}
+                {'id': 370, 'name': 'Javascript', 'duration_in_months': 44}
             ],
         }
     }
@@ -171,7 +171,7 @@ def freelance_two_experiences_with_same_skill_in_converge_time_computed():
         'freelance': {
             'id': 42,
             'computed_skills': [
-                {'id': 370, 'name': 'Javascript', 'duration_in_months': 54}
+                {'id': 370, 'name': 'Javascript', 'duration_in_months': 53}
             ],
         }
     }
@@ -234,11 +234,11 @@ def freelance_challenge_example_computed():
         'freelance': {
             'id': 42,
             'computed_skills': [
-                {'id': 241, 'name': 'React', 'duration_in_months': 29},
-                {'id': 270, 'name': 'Node.js', 'duration_in_months': 29},
-                {'id': 370, 'name': 'Javascript', 'duration_in_months': 61},
-                {'id': 470, 'name': 'MySQL', 'duration_in_months': 33},
-                {'id': 400, 'name': 'Java', 'duration_in_months': 41},
+                {'id': 241, 'name': 'React', 'duration_in_months': 28},
+                {'id': 270, 'name': 'Node.js', 'duration_in_months': 28},
+                {'id': 370, 'name': 'Javascript', 'duration_in_months': 60},
+                {'id': 470, 'name': 'MySQL', 'duration_in_months': 32},
+                {'id': 400, 'name': 'Java', 'duration_in_months': 40},
             ],
         }
     }

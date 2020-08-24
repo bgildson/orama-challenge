@@ -1,0 +1,11 @@
+**/__pycache__
+**/*.pyc
+**/*.pyo
+
+// local files
+**/.DS_Store
+.coverage
+.pytest_cache
+.vscode/settings.json
+coverage.xml
+config_local.py

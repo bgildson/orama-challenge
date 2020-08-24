@@ -1,0 +1,20 @@
+{
+	"name": "orama-challenge",
+	"build": {
+		"context": "..",
+		"dockerfile": "Dockerfile"
+	},
+	"appPort": 5000,
+	"workspaceMount": "source=${localWorkspaceFolder},target=/home/flask/app,type=bind,consistency=delegated",
+	"workspaceFolder": "/home/flask/app",
+	"settings": {
+		"terminal.integrated.shell.linux": null
+	},
+	"extensions": [
+		"donjayamanne.python-extension-pack",
+		"ms-azuretools.vscode-docker",
+		"ms-python.vscode-pylance",
+		"ryanluker.vscode-coverage-gutters",
+		"bungcip.better-toml"
+	]
+}

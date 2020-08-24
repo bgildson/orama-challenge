@@ -5,7 +5,7 @@
 
 This project contains the solution to the [Órama Challenge](./challenge). The solution contains a rest api with the route **/api/freelancers/compute-skills** that can receive a **POST** request with the payload to compute.
 
-**To follow the steps bellow, you should have installed [Docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/).**
+**To follow the steps bellow, you should have [Docker](https://docs.docker.com/get-docker/) installed.**
 
 ## Running the app
 

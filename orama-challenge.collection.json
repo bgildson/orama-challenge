@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "fff82a6e-dc5e-4e0d-a4f1-308f16ef68d4",
+		"name": "orama-challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "orama",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"freelance\": {\n    \"id\": 42,\n    \"user\": {\n      \"firstName\": \"Hunter\",\n      \"lastName\": \"Moore\",\n      \"jobTitle\": \"Fullstack JS Developer\"\n    },\n    \"status\": \"new\",\n    \"retribution\": 650,\n    \"availabilityDate\": \"2018-06-13T00:00:00+01:00\",\n    \"professionalExperiences\": [\n      {\n        \"id\": 4,\n        \"companyName\": \"Okuneva, Kerluke and Strosin\",\n        \"startDate\": \"2016-01-01T00:00:00+01:00\",\n        \"endDate\": \"2018-05-01T00:00:00+01:00\",\n        \"skills\": [\n          {\n            \"id\": 241,\n            \"name\": \"React\"\n          },\n          {\n            \"id\": 270,\n            \"name\": \"Node.js\"\n          },\n          {\n            \"id\": 370,\n            \"name\": \"Javascript\"\n          }\n        ]\n      },\n      {\n        \"id\": 54,\n        \"companyName\": \"Hayes - Veum\",\n        \"startDate\": \"2014-01-01T00:00:00+01:00\",\n        \"endDate\": \"2016-09-01T00:00:00+01:00\",\n        \"skills\": [\n          {\n            \"id\": 470,\n            \"name\": \"MySQL\"\n          },\n          {\n            \"id\": 400,\n            \"name\": \"Java\"\n          },\n          {\n            \"id\": 370,\n            \"name\": \"Javascript\"\n          }\n        ]\n      },\n      {\n        \"id\": 80,\n        \"companyName\": \"Harber, Kirlin and Thompson\",\n        \"startDate\": \"2013-05-01T00:00:00+01:00\",\n        \"endDate\": \"2014-07-01T00:00:00+01:00\",\n        \"skills\": [\n          {\n            \"id\": 370,\n            \"name\": \"Javascript\"\n          },\n          {\n            \"id\": 400,\n            \"name\": \"Java\"\n          }\n        ]\n      }\n    ]\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/freelancers/compute-skills",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"freelancers",
+						"compute-skills"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

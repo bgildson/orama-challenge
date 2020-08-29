@@ -10,12 +10,7 @@ def compute_freelance_skills(payload: Dict[str, Any]) -> Dict[str, Any]:
     """
     Receives the freelance payload and count the months experience with every skill
     """
-    result = {
-        'freelance': {
-            'id': payload['freelance']['id'],
-            'computed_skills': []
-        }
-    }
+    result = {'freelance': {'id': payload['freelance']['id'], 'computed_skills': []}}
 
     skills = {}
     for professional_experience in payload['freelance']['professional_experiences']:
@@ -24,7 +19,7 @@ def compute_freelance_skills(payload: Dict[str, Any]) -> Dict[str, Any]:
                 skills[skill['id']] = {
                     'id': skill['id'],
                     'name': skill['name'],
-                    'months': {}
+                    'months': {},
                 }
 
             current: datetime = professional_experience['start_date']
@@ -39,7 +34,7 @@ def compute_freelance_skills(payload: Dict[str, Any]) -> Dict[str, Any]:
         computed_skill = {
             'id': skill['id'],
             'name': skill['name'],
-            'duration_in_months': len(skill['months'])
+            'duration_in_months': len(skill['months']),
         }
         result['freelance']['computed_skills'].append(computed_skill)
 

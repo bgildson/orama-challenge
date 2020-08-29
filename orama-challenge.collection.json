@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "orama",
+			"name": "compute skills",
 			"request": {
 				"method": "POST",
 				"header": [],
